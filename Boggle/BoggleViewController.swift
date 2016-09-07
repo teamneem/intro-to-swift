@@ -11,16 +11,19 @@ import UIKit
 
 class BoggleViewController: UIViewController, BoggleViewObserver {
     var boggleModel: BoggleModel?
+    var boggleView: BoggleView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let boggleView = self.view as! BoggleView
-        boggleView.setObserver(self)
+        self.boggleView = self.view as? BoggleView
+        boggleView!.setObserver(self)
         
         self.boggleModel = BoggleModel()
     }
     
     func resetButtons() {
-        print("Reset!")
+        let numberOfButtons = self.boggleView?.buttons.count
+        
+        let titleArray = self.boggleModel?.buttonTextArray(numberOfButtons!)
     }
 }
