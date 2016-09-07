@@ -33,6 +33,7 @@ class BoggleModel {
     
     func addLetter(letter: String) {
         self.answersText += letter
+        self.observer?.answersTextChanged(self.answersText)
     }
     
     func setObserver(observer: BoggleModelObserver) {
