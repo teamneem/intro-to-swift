@@ -24,6 +24,11 @@ class BoggleModel {
         return array
     }
     
+    func resetText() {
+        self.answersText = ""
+        self.observer?.answersTextChanged(self.answersText)
+    }
+    
     func randomLetter() -> String {
         let letters : String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         let rand = Int(arc4random_uniform(26))

@@ -24,6 +24,8 @@ class BoggleViewController: UIViewController, BoggleViewObserver, BoggleModelObs
     }
     
     func resetButtons() {
+        self.boggleModel!.resetText()
+        
         let numberOfButtons = self.boggleView?.buttons.count
         
         let titleArray = self.boggleModel?.buttonTextArray(numberOfButtons!)
