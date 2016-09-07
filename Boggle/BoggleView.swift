@@ -12,4 +12,8 @@ import UIKit
 class BoggleView: UIView {
     
     @IBOutlet var buttons: [UIButton]!
+    
+    @IBAction func resetPressed(sender: AnyObject) {
+        
+    }
 }
