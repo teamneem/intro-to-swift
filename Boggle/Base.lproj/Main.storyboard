@@ -254,21 +254,32 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p0j-OY-n8M">
+                                <rect key="frame" x="137" y="410" width="329" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="NvI-lG-vNL" firstAttribute="centerY" secondItem="rVV-87-LKh" secondAttribute="centerY" id="1GH-hT-LEx"/>
                             <constraint firstItem="rVV-87-LKh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1jQ-yU-aqZ"/>
                             <constraint firstItem="kx6-wn-ver" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="6:10" id="49Q-7a-9HU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p0j-OY-n8M" secondAttribute="bottom" constant="20" id="8kQ-QW-p1f"/>
                             <constraint firstAttribute="leadingMargin" secondItem="rVV-87-LKh" secondAttribute="leading" id="BPA-x0-7i3"/>
                             <constraint firstItem="kx6-wn-ver" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="E3F-CY-UIq"/>
+                            <constraint firstItem="p0j-OY-n8M" firstAttribute="leading" secondItem="rVV-87-LKh" secondAttribute="trailing" constant="20" id="Jw7-hm-9U0"/>
                             <constraint firstItem="rVV-87-LKh" firstAttribute="top" secondItem="kx6-wn-ver" secondAttribute="bottom" constant="30" id="QnI-Ny-kXG"/>
                             <constraint firstItem="kx6-wn-ver" firstAttribute="leading" secondItem="rVV-87-LKh" secondAttribute="trailing" constant="-310" id="VJO-Qi-kac"/>
                             <constraint firstAttribute="leadingMargin" secondItem="kx6-wn-ver" secondAttribute="leading" id="ez7-Bb-sMP"/>
+                            <constraint firstItem="NvI-lG-vNL" firstAttribute="leading" secondItem="p0j-OY-n8M" secondAttribute="trailing" constant="14" id="gNW-Mz-ccV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kx6-wn-ver" secondAttribute="trailing" id="iz9-8H-qg6"/>
                             <constraint firstItem="rVV-87-LKh" firstAttribute="leading" secondItem="kx6-wn-ver" secondAttribute="trailing" constant="-299" id="oM4-iR-OVt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NvI-lG-vNL" secondAttribute="trailing" id="oc7-MB-GQL"/>
                             <constraint firstItem="rVV-87-LKh" firstAttribute="top" secondItem="6lQ-QW-wdY" secondAttribute="bottom" constant="20" id="tEc-oN-rvP"/>
+                            <constraint firstItem="p0j-OY-n8M" firstAttribute="top" secondItem="NvI-lG-vNL" secondAttribute="top" id="umQ-is-E5E"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -279,6 +290,7 @@
                             </mask>
                         </variation>
                         <connections>
+                            <outlet property="answersView" destination="p0j-OY-n8M" id="K5b-Hw-e8F"/>
                             <outletCollection property="buttons" destination="F0n-WF-n9d" collectionClass="NSMutableArray" id="im1-mu-m9U"/>
                             <outletCollection property="buttons" destination="bNK-g5-zGo" collectionClass="NSMutableArray" id="57R-1J-DlM"/>
                             <outletCollection property="buttons" destination="SqC-MJ-QgS" collectionClass="NSMutableArray" id="cIy-Wk-91o"/>

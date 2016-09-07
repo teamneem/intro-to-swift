@@ -18,6 +18,7 @@ class BoggleView: UIView {
     weak var observer: BoggleViewObserver?
     
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var answersView: UITextView!
     
     func setObserver(observer: BoggleViewObserver) {
         self.observer = observer
