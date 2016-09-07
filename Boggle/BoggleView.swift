@@ -11,4 +11,5 @@ import UIKit
 
 class BoggleView: UIView {
     
+    @IBOutlet var buttons: [UIButton]!
 }
