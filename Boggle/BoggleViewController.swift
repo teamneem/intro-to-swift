@@ -29,4 +29,8 @@ class BoggleViewController: UIViewController, BoggleViewObserver {
         
         self.boggleView!.setTitles(titleArray!)
     }
+    
+    func letterPressed(letter: String) {
+        
+    }
 }

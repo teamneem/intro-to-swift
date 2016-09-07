@@ -11,6 +11,7 @@ import UIKit
 
 protocol BoggleViewObserver: class {
     func resetButtons()
+    func letterPressed(letter: String)
 }
 
 class BoggleView: UIView {
@@ -27,6 +28,7 @@ class BoggleView: UIView {
     }
     
     @IBAction func letterButtonPressed(sender: UIButton) {
+        self.observer?.letterPressed((sender.titleLabel?.text)!)
     }
     
     func setTitles(buttonTitleArray: Array<String>) {
