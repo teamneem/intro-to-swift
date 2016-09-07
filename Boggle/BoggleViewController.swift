@@ -25,5 +25,7 @@ class BoggleViewController: UIViewController, BoggleViewObserver {
         let numberOfButtons = self.boggleView?.buttons.count
         
         let titleArray = self.boggleModel?.buttonTextArray(numberOfButtons!)
+        
+        self.boggleView!.setTitles(titleArray!)
     }
 }
