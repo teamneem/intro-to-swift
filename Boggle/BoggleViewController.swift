@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BoggleViewController: UIViewController, BoggleViewObserver {
+class BoggleViewController: UIViewController, BoggleViewObserver, BoggleModelObserver {
     var boggleModel: BoggleModel?
     var boggleView: BoggleView?
     
@@ -19,6 +19,7 @@ class BoggleViewController: UIViewController, BoggleViewObserver {
         boggleView!.setObserver(self)
         
         self.boggleModel = BoggleModel()
+        self.boggleModel?.observer = self
         resetButtons()
     }
     
@@ -32,5 +33,9 @@ class BoggleViewController: UIViewController, BoggleViewObserver {
     
     func letterPressed(letter: String) {
         self.boggleModel?.addLetter(letter)
+    }
+    
+    func answersTextChanged(answersText: String) {
+
     }
 }
