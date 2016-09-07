@@ -253,6 +253,9 @@
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="enterPressed:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="Shr-B4-XKq"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p0j-OY-n8M">
                                 <rect key="frame" x="137" y="410" width="329" height="170"/>

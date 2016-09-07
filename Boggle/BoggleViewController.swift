@@ -36,6 +36,6 @@ class BoggleViewController: UIViewController, BoggleViewObserver, BoggleModelObs
     }
     
     func answersTextChanged(answersText: String) {
-
+        self.boggleView?.answersView.text = answersText
     }
 }

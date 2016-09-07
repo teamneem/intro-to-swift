@@ -32,6 +32,11 @@ class BoggleView: UIView {
         self.observer?.letterPressed((sender.titleLabel?.text)!)
     }
     
+    
+    @IBAction func enterPressed(sender: AnyObject) {
+        self.observer?.letterPressed("\n")
+    }
+    
     func setTitles(buttonTitleArray: Array<String>) {
         var int = 0
         for button in buttons {
