@@ -8,8 +8,13 @@
 
 import Foundation
 
+protocol BoggleModelObserver: class {
+    func answersTextChanged(answersText: String)
+}
+
 class BoggleModel {
     var answersText: String = ""
+    weak var observer: BoggleModelObserver?
     
     func buttonTextArray(numberOfButtons: Int) -> Array<String> {
         var array = [String]()
@@ -28,5 +33,9 @@ class BoggleModel {
     
     func addLetter(letter: String) {
         self.answersText += letter
+    }
+    
+    func setObserver(observer: BoggleModelObserver) {
+        self.observer = observer
     }
 }
