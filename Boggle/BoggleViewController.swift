@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
-class BoggleViewController: UIViewController {
+class BoggleViewController: UIViewController, BoggleViewObserver {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let boggleView = self.view as! BoggleView
+        boggleView.setObserver(self)
+    }
     
+    func resetButtons() {
+        print("Reset!")
+    }
 }
