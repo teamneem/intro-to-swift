@@ -31,6 +31,6 @@ class BoggleViewController: UIViewController, BoggleViewObserver {
     }
     
     func letterPressed(letter: String) {
-        
+        self.boggleModel?.addLetter(letter)
     }
 }

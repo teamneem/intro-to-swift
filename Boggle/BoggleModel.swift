@@ -9,6 +9,8 @@
 import Foundation
 
 class BoggleModel {
+    var answersText: String = ""
+    
     func buttonTextArray(numberOfButtons: Int) -> Array<String> {
         var array = [String]()
         for i in 0..<numberOfButtons {
@@ -22,5 +24,9 @@ class BoggleModel {
         let rand = Int(arc4random_uniform(26))
         let stringArray = Array(letters.characters)
         return String(stringArray[rand])
+    }
+    
+    func addLetter(letter: String) {
+        self.answersText += letter
     }
 }
