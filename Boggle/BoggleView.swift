@@ -26,6 +26,9 @@ class BoggleView: UIView {
         self.observer?.resetButtons()
     }
     
+    @IBAction func letterButtonPressed(sender: UIButton) {
+    }
+    
     func setTitles(buttonTitleArray: Array<String>) {
         var int = 0
         for button in buttons {
