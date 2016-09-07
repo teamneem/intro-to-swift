@@ -19,6 +19,7 @@ class BoggleViewController: UIViewController, BoggleViewObserver {
         boggleView!.setObserver(self)
         
         self.boggleModel = BoggleModel()
+        resetButtons()
     }
     
     func resetButtons() {
