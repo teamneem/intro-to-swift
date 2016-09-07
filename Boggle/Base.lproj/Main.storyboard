@@ -21,6 +21,25 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kx6-wn-ver">
                                 <rect key="frame" x="20" y="0.0" width="560" height="360"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lQ-QW-wdY">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="90"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2d-lf-KIC">
+                                        <rect key="frame" x="0.0" y="90" width="560" height="90"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S3k-WF-kJT">
+                                        <rect key="frame" x="0.0" y="180" width="560" height="90"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t5R-Nj-V0x">
+                                        <rect key="frame" x="0.0" y="270" width="560" height="90"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6lQ-QW-wdY" firstAttribute="height" secondItem="r2d-lf-KIC" secondAttribute="height" id="C6T-nP-ucS"/>
+                                    <constraint firstItem="6lQ-QW-wdY" firstAttribute="height" secondItem="t5R-Nj-V0x" secondAttribute="height" id="HiS-qy-9lm"/>
+                                    <constraint firstItem="6lQ-QW-wdY" firstAttribute="height" secondItem="S3k-WF-kJT" secondAttribute="height" id="Qnd-Rq-8HF"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
